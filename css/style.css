@@ -25,9 +25,18 @@ body {
 }
 
 .main-title {
-  background-color: #2f3032;
+  background-color: var(--white-color);
   padding-top: 200px;
   height: 600px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(47, 48, 58, 0.4) 0%,
+    rgba(47, 48, 58, 0.4) 0%
+  );
+  background-image: url("../images/overly.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1600px 600px;
 }
 
 .team-section {
@@ -44,6 +53,8 @@ body {
 }
 
 .flex-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -56,7 +67,7 @@ body {
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-style: bold;
   font-weight: 700;
   font-size: 26px;
@@ -97,6 +108,17 @@ body {
   color: var(--blue-color);
 }
 
+.icon-contacts-list {
+  vertical-align: center;
+  fill: var(--grey-color);
+  margin-right: 10px;
+}
+
+.icon-contacts-list:hover,
+.icon-contacts-list:focus {
+  color: var(--blue-color);
+}
+
 .contacts-list {
   display: flex;
   gap: 50px;
@@ -116,6 +138,12 @@ body {
 .contacts-list a:hover,
 .contacts-list a:focus {
   color: var(--blue-color);
+}
+
+.icon-header {
+  vertical-align: middle;
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .title {
@@ -178,6 +206,20 @@ body {
   list-style: none;
 }
 
+.lorem-icons {
+  display: inline-block;
+  margin-right: 20px;
+}
+.lorem-icon {
+  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
 .articles p {
   font-weight: 400;
   font-size: 14px;
@@ -226,6 +268,8 @@ img {
 }
 .logo-links {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .team-image {
@@ -258,14 +302,63 @@ img {
   vertical-align: top;
   letter-spacing: 0.03em;
   color: var(#2f3032);
-  margin-bottom: 30px;
   padding-top: 10px;
+}
+
+.box-icons-team {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  margin-bottom: 18px;
+  margin-right: 32px;
+  margin-left: 32px;
+  gap: 10px;
+  align-items: center;
+}
+
+.icons-team {
+  fill: #afb1b8;
+  cursor: pointer;
+  display: block;
+}
+
+.icons-team:hover,
+.icons-team:focus {
+  fill: var(--white-color);
+  background-color: var(--blue-color);
+  border-radius: 50%;
+}
+
+.client-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-client {
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  cursor: pointer;
+}
+
+.icons-client:hover,
+.icons-client:focus,
+.icons-client:active {
+  fill: var(--blue-color);
+  border-color: var(--blue-color);
 }
 
 .footer-address {
   background-color: var(--dark-grey-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.flex-footer {
+  display: flex;
+  gap: 70px;
 }
 
 .localization {
@@ -287,13 +380,14 @@ img {
 }
 
 .footer-contacts a {
+  text-decoration: none;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
   letter-spacing: 0.03;
   color: var(--footer-color);
-  text-decoration: none;
 }
 
 .mail {
@@ -332,6 +426,49 @@ img {
 .filter:focus {
   color: var(--white-color);
   background-color: var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.join-us-box {
+  align-items: center;
+  margin-top: -12px;
+  margin-left: 12px;
+}
+
+.icons-join-us {
+  list-style-type: none;
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.icon-join-us {
+  fill: var(--white-color);
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.icon-join-us:hover,
+.icon-join-us:focus {
+  fill: var(--white-color);
+  background-color: var(--blue-color);
+  border-radius: 50%;
+}
+
+.join-us-box h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-top: 22px;
+  margin-bottom: 0px;
 }
 
 .portfolio-grid {
@@ -348,6 +485,12 @@ img {
 .portfolio-images {
   width: calc((100% - 60px) / 3);
   background-color: var(--white-color);
+}
+
+.portfolio-images:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .image-portfolio-title {
