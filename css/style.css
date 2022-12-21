@@ -26,7 +26,6 @@ body {
 
 .main-title {
   background-color: var(--white-color);
-  padding-top: 200px;
   height: 600px;
   background-image: linear-gradient(
     90deg,
@@ -36,7 +35,6 @@ body {
   background-image: url("../images/overly.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1600px 600px;
 }
 
 .team-section {
@@ -303,59 +301,64 @@ img {
   padding-top: 10px;
 }
 
-.icons-team {
-  list-style-type: none;
-}
-
 .box-icons-team {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-around;
+  fill: #afb1b8;
   padding-top: 16px;
   padding-right: 32px;
   padding-left: 32px;
 }
 
+.icons-team {
+  list-style-type: none;
+}
+
 .icon-team {
   display: block;
   border-radius: 50%;
+  fill: #afb1b8;
 }
 
 .icon-social {
   display: block;
-  fill: #afb1b8;
   border-radius: 50%;
 }
 
-.icon-social:hover,
-.icon-social:focus {
+.icon-team:hover,
+.icon-team:focus {
   fill: var(--white-color);
   background-color: var(--blue-color);
   border-radius: 50%;
 }
 
-.client-box {
+.clients-box {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
 }
 
-.icons-client {
+.icons-clients {
+  display: block;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  cursor: pointer;
-  list-style-type: none;
 }
 
-.icons-client:hover,
-.icons-client:focus {
+.icon-client {
+  width: 170px;
+  height: 92px;
+}
+
+.icons-clients:hover,
+.icons-clients:focus {
   fill: var(--blue-color);
   border-color: var(--blue-color);
 }
+
+/*footer*/
 
 .footer-address {
   background-color: var(--dark-grey-color);
@@ -507,17 +510,11 @@ img {
   gap: 10px;
 }
 
-.icon-join-us {
+.icon-social-footer {
   fill: var(--white-color);
+  display: block;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.icon-join-us:hover,
-.icon-join-us:focus {
-  fill: var(--white-color);
-  background-color: var(--blue-color);
-  border-radius: 50%;
 }
 
 .join-us-box h3 {
