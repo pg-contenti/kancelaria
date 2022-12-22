@@ -26,12 +26,15 @@ body {
 
 .main-title {
   background-color: var(--white-color);
+  height: 600px;
   background-image: linear-gradient(
     90deg,
     rgba(47, 48, 58, 0.4) 0%,
     rgba(47, 48, 58, 0.4) 0%
   );
   background-image: url("../images/overly.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .team-section {
@@ -407,8 +410,8 @@ img {
   text-decoration: underline;
 }
 
-.footer-contacts :hover,
-.footer-contacts :focus {
+.footer-contacts a:hover,
+.footer-contacts a:focus {
   color: var(--blue-color);
 }
 
