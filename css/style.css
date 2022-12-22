@@ -389,8 +389,8 @@ img {
   gap: 9px;
 }
 
-.footer-contacts a {
-  text-decoration: none;
+.mail {
+  text-decoration: underline;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -400,14 +400,15 @@ img {
   color: var(--footer-color);
 }
 
-.mail {
+.phone {
+  color: var(--footer-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   text-align: left;
   letter-spacing: 0.03;
-  color: var(--footer-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .footer-contacts a:hover,
