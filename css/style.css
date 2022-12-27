@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
 :root {
   --blue-color: #2196f3;
   --grey-color: #757575;
