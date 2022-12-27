@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 :root {
   --blue-color: #2196f3;
   --grey-color: #757575;
@@ -215,7 +221,7 @@ body {
   background-color: var(--white-color);
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
-      0px 2px 1px rgb(0 0 0 / 20%);
+    0px 2px 1px rgb(0 0 0 / 20%);
   transform: translateY(0);
   transition-property: transform;
   transition-duration: 250ms;
@@ -248,6 +254,16 @@ body {
 
 .is-hidden .modal {
   transform: translateY(-100%);
+}
+
+/*sekcja buttonów dla portfolio*/
+
+.portfolio-buttons {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 6px;
+  justify-content: center;
 }
 
 /* sekcja lorem ipsum*/
