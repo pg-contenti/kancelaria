@@ -36,7 +36,7 @@
             >
             <ul class="nav-list">
               <li>
-                <a href="#">Agencja</a>
+                <a class="active-link" href="index.html">Agencja</a>
               </li>
               <li>
                 <a href="portfolio.html">Portfolio</a>
@@ -72,8 +72,10 @@
     <main>
       <section class="main-title section">
         <div class="container title">
-          <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button">Zamów usługę</button>
+          <h1 class="text-title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button type="button" class="modal-button" data-modal-open>
+            Zamów usługę
+          </button>
         </div>
       </section>
 
@@ -135,31 +137,36 @@
         <div class="container">
           <h2 class="subtitle">Czym się zajmujemy</h2>
           <div class="images-container">
-            <picture>
+            <div class="text-image">
               <img
                 alt="zdjęcie tableta"
                 src="images/tablet.jpg"
                 width="370"
                 height="294"
               />
-            </picture>
-            <picture>
-              <img
-                alt="zdjęcie telefonu"
-                src="images/computer.jpg"
-                width="370"
-                height="294"
-              />
-            </picture>
-
-            <picture>
-              <img
-                alt="zdjęcie tableta z mozaiką"
-                src="images/tablet-colors.jpg"
-                width="370"
-                height="294"
-              />
-            </picture>
+              <p class="image-title">Aplikacje komputerowe</p>
+            </div>
+            
+              <div class="text-image">
+                <img
+                  alt="zdjęcie telefonu"
+                  src="images/computer.jpg"
+                  width="370"
+                  height="294"
+                />
+                <p class="image-title">Aplikacje mobilne</p>
+              </div>
+                    
+              <div class="text-image">
+                <img
+                  alt="zdjęcie tableta z mozaiką"
+                  src="images/tablet-colors.jpg"
+                  width="370"
+                  height="294"
+                />
+                <p class="image-title">Rozwiązania graficzne</p>
+              </div>
+            
           </div>
         </div>
       </section>
@@ -504,15 +511,15 @@
           <address>
             <ul class="footer-contacts">
               <li>
-                <span class="localization"
-                  >m. Warszawa, Aleje Jerozolimskie 21</span
+                <p class="localization">m. Warszawa, Aleje Jerozolimskie 21</p>
+              </li>
+              <li>
+                <a class="phone" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
                 >
               </li>
               <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <a href="tel:+48111111111">+48111111111</a>
+                <a class="phone" href="tel:+48111111111">+48111111111</a>
               </li>
             </ul>
           </address>
@@ -576,5 +583,11 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button-close" data-modal-close>&times;</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
