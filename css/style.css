@@ -98,7 +98,7 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  width: 53px;
+  width: 100%;
   height: 4px;
   top: 45px;
   border-radius: 2px;
@@ -261,7 +261,7 @@ body {
   cursor: pointer;
 }
 
-.is-hidden modal {
+.is-hidden .modal {
   transform: translateY(-150%);
 }
 
