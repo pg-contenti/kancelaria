@@ -223,6 +223,7 @@ body {
   position: relative;
   width: 528px;
   min-height: 581px;
+  padding: 40px;
   background-color: white;
   transform: translateY(0);
   border-radius: 4px;
@@ -275,7 +276,6 @@ body {
   line-height: 1.15;
   text-align: center;
   color: var(--black-color);
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -285,7 +285,6 @@ body {
   color: var(--grey-color);
   font-size: 12px;
   margin-bottom: 28px;
-  margin-left: 40px;
   width: 448px;
   height: 40px;
 }
@@ -313,11 +312,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-label:hover .modal-form-icon {
+.modal-form-label:focus-within .modal-form-icon {
   fill: var(--blue-color);
 }
 
-.modal-form-input:hover,
 .modal-form-input:active,
 .modal-form-input:focus {
   border: 1px solid var(--blue-color);
@@ -326,11 +324,11 @@ body {
 
 .field-name-form {
   display: block;
+  margin-bottom: 20px;
   font-style: regular;
   font-size: 12px;
   line-height: 14px;
   color: var(--grey-color);
-  margin-left: 40px;
   text-align: start;
 }
 
@@ -341,12 +339,10 @@ body {
   border: solid 1px;
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .form-field:focus {
-  border-color: var(--blue-color) !important;
+  border-color: var(--blue-color);
   outline: none;
 }
 
@@ -358,7 +354,6 @@ body {
 .form-field-comment {
   width: 448px;
   height: 120px;
-  margin-bottom: 20px;
   border: solid 1px;
   border-radius: 4px;
   border-color: rgba(33, 33, 33, 0.2);
@@ -374,27 +369,24 @@ textarea {
   padding: 16px 12px 16px 12px;
 }
 
-.form-field-comment:hover,
 .form-field-comment:focus {
   border-color: var(--blue-color);
 }
 
 .checkbox-box {
-  margin: 0 auto;
   position: relative;
   cursor: pointer;
+  margin-left: 14px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .checkbox-oryginal {
+  position: absolute;
   opacity: 0;
-  margin-right: 9px;
-  margin-left: 40px;
 }
 
 .checkbox-icon {
-  position: absolute;
-  margin-left: 40px;
-  left: 0px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--white-color);
@@ -408,6 +400,11 @@ textarea {
 }
 
 .text-accept {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
   color: var(--grey-color);
 }
 
@@ -423,13 +420,12 @@ textarea {
   color: var(--white-color);
   border: none;
   border-radius: 4px;
-  margin-bottom: 40px;
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
-  margin-left: 164px;
+  margin-left: 124px;
   margin-top: 30px;
 }
 
