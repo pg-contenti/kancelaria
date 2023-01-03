@@ -374,16 +374,20 @@ textarea {
 }
 
 .checkbox-box {
+  display: flex;
+  gap: 7px;
   position: relative;
   cursor: pointer;
   margin-left: 14px;
   margin-bottom: 30px;
+  align-items: center;
   text-align: center;
 }
 
 .checkbox-oryginal {
   position: absolute;
   opacity: 0;
+  cursor: pointer;
 }
 
 .checkbox-icon {
@@ -404,8 +408,9 @@ textarea {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  text-align: left;
   color: var(--grey-color);
+  justify-content: center;
+  align-items: center;
 }
 
 .text-accept a {
@@ -426,7 +431,6 @@ textarea {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   margin-left: 124px;
-  margin-top: 30px;
 }
 
 .button-submit:hover,
